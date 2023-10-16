@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script src="action.js"></script>
+    <title>Formulaire d'Inscription</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        h1 {
+  text-align: center;
+  color: rgb(133, 45, 45);
+ 
+}
+.cadre {
+  border: 2px solid rgb(133, 45, 45); 
+  padding: 20px; 
+  width: 300px; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+form {
+  text-align: left; 
+}
+    </style>
+</head>
+<body>
+    <div class="cadre">
+    <h1>Formulaire d'Inscription</h1>
+    <form action="action.html" method="get">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required minlength="2"  style="width: 250px;"  maxlength="20" placeholder="Entrez votre nom">
+        
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="firstname" required minlength="2" style="width: 250px;" maxlength="20" placeholder="Entrez votre prénom">
+        
+        <label for="birthday">Date de naissance :</label>
+        <input type="date" id="birthday" name="birthday" style="width: 250px;"  required>
+        
+        <label for="address">Adresse postale :</label>
+        <input type="text" id="address" name="address" required minlength="5" style="width: 250px;"  maxlength="50" placeholder="Entrez votre adresse postale">
+        
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required minlength="5" style="width: 250px;"  maxlength="30" placeholder="Entrez votre adresse email">
+        
+        <input type="submit" value="Soumettre">
+    </form>
+    </div>
+</body>
+</html>
